@@ -2,6 +2,10 @@
 import cllvm
 #endif
 
+#if os(macOS)
+import Darwin
+#endif
+
 /// An `IRType` is a type that is capable of lowering itself to an `LLVMTypeRef`
 /// object for use with LLVM's C API.
 public protocol IRType {

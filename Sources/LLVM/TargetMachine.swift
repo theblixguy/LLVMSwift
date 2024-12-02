@@ -2,6 +2,10 @@
 import cllvm
 #endif
 
+#if os(macOS)
+import Darwin
+#endif
+
 /// The supported types of files codegen can produce.
 public enum CodegenFileType {
   /// An object file (.o).

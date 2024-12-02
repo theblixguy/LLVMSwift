@@ -2,6 +2,10 @@
 import cllvm
 #endif
 
+#if os(macOS)
+import Darwin
+#endif
+
 /// A `TargetData` encapsulates information about the data requirements of a
 /// particular target architecture and can be used to retrieve information about
 /// sizes and offsets of types with respect to this target.

@@ -2,6 +2,10 @@
 import cllvm
 #endif
 
+#if os(macOS)
+import Darwin
+#endif
+
 /// A `Module` represents the top-level structure of an LLVM program. An LLVM
 /// module is effectively a translation unit or a collection of translation
 /// units merged together.
